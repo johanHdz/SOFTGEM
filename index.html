@@ -13,143 +13,48 @@
 </head>
 
 <body>
-  <header class="header">
-    <a href="index.php">
-      <img class="header__logo" src="img2/LogoAnime.png" alt="Logotipo">
-    </a>
-  </header>
-
-  <div>
-
+  <div class="navegacion">
+    <img class="navegacion__logo" src="src/perrito.jpg" alt="SOFTGEM">
+    <a class="navegacion__enlace navegacion__enlace--activo" href="index.html">Inicio</a>
+    <a class="navegacion__enlace" href="nosotros.html">Acerca de nosotros</a>
+    <a class="navegacion__enlace" href="ayuda.html">Ayuda</a>
+    <a class="navegacion__enlace" href="productos.html">Productos</a>
   </div>
 
-  <nav class="navegacion">
-    <a class="navegacion__enlace navegacion__enlace--activo" href="index.php">Tienda</a>
-    <a class="navegacion__enlace" href="nosotros.html">Nosotros</a>
-    <a class="navegacion__enlace" href="login.html">Login</a>
-    <a class="navegacion__enlace" href="cerrarSesion.php">Salir</a>
-  </nav>
-
   <main class="contenedor">
-    <h1>Nuestros Productos</h1>
+    <h1>SOFTGEM</h1>
 
+    <div class="grid grid__contenedor">
+      <div>
+        <img class="img__contenedor" src="src/megan_logo 3.png" alt="MEGAN">
+      </div>
+      <div class="div__contenedor">
+        <h2>Conoce nuestro asistente virtual MEGAN</h2>
+        <p class="p__contenedor">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam id dolor vitae augue semper gravida quis vel
+          nisl.
+          Quisque sagittis
+          volutpat velit ut placerat. Aliquam suscipit urna in mattis fringilla. Vestibulum vehicula lorem dui, eu
+          auctor
+          dolor egestas sit
+          amet. Mauris ut turpis mi. Aliquam erat volutpat. Maecenas porta malesuada lacinia.
+        </p>
+        <a class="a__contenedor" href="productos.html">Ver más.</a>
+      </div>
+    </div>
+
+    <p> </p>
     <div class="grid">
-      <div class="producto">
-        <a href="producto.html">
-          <img class="producto__imagen" src="img2/FigRem.jpg" alt="Figura Rem">
-          <div class="producto__informacion">
-            <p class="producto__nombre">Figura Rem de <span class="producto__color">RE:ZERO</span></p>
-            <p class="producto__precio">$600 MXN</p>
-          </div>
-        </a>
+      <div>
+        <h2>¡Unete a nuestro equipo!</h2>
+        <p>Tenemos cientos de oportunidades para crecer, aprender e innovar.</p>
+        <p>Se parte de esta gran familia</p>
       </div>
-      <!-- Figura Rem-->
-
-      <div class="producto">
-        <a href="producto2.html">
-          <img class="producto__imagen" src="img2/FigDeku.jpg" alt="Figura Deku">
-          <div class="producto__informacion">
-            <p class="producto__nombre">Figura Deku de <br><span class="producto__color">My hero Academia</span></p>
-            <p class="producto__precio">$1000 MXN</p>
-          </div>
-        </a>
-      </div>
-      <!-- Figura Deku-->
-
-      <div class="producto">
-        <a href="producto3.html">
-          <img class="producto__imagen" src="img2/FigGoku.jpg" alt="Figura Goku">
-          <div class="producto__informacion">
-            <p class="producto__nombre">Figura Goku de <span class="producto__color">Dragon Ball</span></p>
-            <p class="producto__precio">$1200 MXN</p>
-          </div>
-        </a>
-      </div>
-      <!-- Figura Goku-->
-
-      <div class="producto">
-        <a>
-          <img class="producto__imagen" src="img2/FigMai.jpg" alt="Figura Mai">
-          <div class="producto__informacion">
-            <p class="producto__nombre">Figura Sakurajima Mai</p>
-            <p class="producto__precio">$1300 MXN</p>
-          </div>
-        </a>
-      </div>
-      <!-- Figura Mai-->
-
-      <div class="producto">
-        <a>
-          <img class="producto__imagen" src="img2/FigRengoku.jpg" alt="Figura Rengoku">
-          <div class="producto__informacion">
-            <p class="producto__nombre">Figura Rengoku de <span class="producto__color">Kimetsu no yaiba</span></p>
-            <p class="producto__precio">$1200 MXN</p>
-          </div>
-        </a>
-      </div>
-      <!-- Figura Rengoku -->
-
-      <div class="producto">
-        <a>
-          <img class="producto__imagen" src="img2/FigMona.jpg" alt="Figura Mona">
-          <div class="producto__informacion">
-            <p class="producto__nombre">Figura Mona de <span class="producto__color">Genshin Impact</span></p>
-            <p class="producto__precio">$1300 MXN</p>
-          </div>
-        </a>
-      </div>
-      <!-- Figura Mona -->
-
-      <div class="producto">
-        <a>
-          <img class="producto__imagen" src="img2/FigVegta.jpg" alt="Figura Vegeta">
-          <div class="producto__informacion">
-            <p class="producto__nombre">Figura Vegetta de <span class="producto__color">dragon ball</span></p>
-            <p class="producto__precio">$250 MXN</p>
-          </div>
-        </a>
-      </div>
-      <!-- Figura Vegeta -->
-
-      <div class="producto">
-        <a>
-          <img class="producto__imagen" src="img2/FigTAN.jpg" alt="Figura Tanjiro">
-          <div class="producto__informacion">
-            <p class="producto__nombre">fIGURA tanjiro de <span class="producto__color">Kimetsu no yaiba</span></p>
-            <p class="producto__precio">$800 MXN</p>
-          </div>
-        </a>
-      </div>
-      <!-- Figura Tanjiro -->
-
-      <div class="producto">
-        <a>
-          <img class="producto__imagen" src="img2/FigAsuja.jpg" alt="Figura Feliz Jueves">
-          <div class="producto__informacion">
-            <p class="producto__nombre">Figura asuka de <span class="producto__color">evangelion</span></p>
-            <p class="producto__precio">$750 MXN</p>
-          </div>
-        </a>
-      </div>
-      <!-- Figura Feliz Jueves -->
-
-      <div class="producto">
-        <a>
-          <img class="producto__imagen" src="img2/FigSaber2.jpg" alt="Figura Saber">
-          <div class="producto__informacion">
-            <p class="producto__nombre">figura saber de <span class="producto__color">fate stay night</span></p>
-            <p class="producto__precio">$900 MXN</p>
-          </div>
-        </a>
-      </div>
-      <!-- Figura Saber -->
-
-      <div class="grafico grafico--figura"></div>
     </div>
   </main>
 
   <footer class="footer">
-    <p class="footer__texto"> Tienda de Figuras. Todos los derechos Reservados</p>
+    <p class="footer__texto"> Copyright © 2022 &middot; SOFTGEM. Todos los derechos Reservados.</p>
   </footer>
 </body>
 

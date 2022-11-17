@@ -1,13 +1,13 @@
 :root{
-    --primario: #ff0000;
-    --secundario: #FFCE00;
+    --primario: #9d27f1;
+    --secundario: #e6d226;
     --secundarioOscuro: #e9ff02;
     --blanco: #FFF;
-    --negro: #000;
+    --negro: rgb(255, 255, 255);
     --azulPrimario: #31b3eb;
     --gris: #808080;
     
-    --fuentePrincipal: 'Staatliches', cursive;
+    --fuentePrincipal: 'Staatliches';
 }
 
 html {
@@ -30,19 +30,24 @@ p {
     font-family: Arial, Helvetica, sans-serif;
     color: var(--blanco);
 }
+.p__contenedor {
+    text-align: justify;
+    margin: 0;
+}
 a {
     text-decoration: none;
 }
-img {
-    width: 100%;
+.a__contenedor {
+    font-size: 1.8rem;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
 }
 .contenedor {
-    max-width: 100rem;
-    margin: 0 auto;
+    max-width: 90%;
+    margin: 0rem auto;
 }
 h1, h2, h3 {
     text-align: center;
-    color: var(--primario);
     font-family: var(--fuentePrincipal);
 }
 h1 {
@@ -50,38 +55,11 @@ h1 {
 }
 h2 {
     font-size: 3.2rem;
+    color: white;
+    margin: 0;
 }
 h3 {
     font-size: 2.4rem;
-}
-
- /* Textos varios*/
- .mensaje__usuario {
-    font-family: var(--fuentePrincipal);
-    font-size: 2.5rem;
-    text-align: right;
-    line-height: 0;
-}
-.mensaje__precio {
-    font-size: 2.8rem;
-    color: var(--secundario);
-    font-family: var(--fuentePrincipal);
-    margin: 1rem 0;
-    text-align: left;
-    line-height: 1.2;
-}
-.mensaje__compra {
-    font-size: 2rem;
-    text-align: center;
-    font-family: var(--fuentePrincipal);
-    margin: 0;
-}
-.mensaje__titulo {
-    margin: 10px 0;
-}
-.resumen {
-    color: var(--primario);
-    text-align: center;
 }
 
 /* Header */
@@ -100,9 +78,7 @@ h3 {
     margin-top: 2rem;
 }
 .footer__texto {
-    font-family: var(--fuentePrincipal);
     text-align: center;
-    font-size: 2.2rem;
 }
 
 /* Navegación */
@@ -110,8 +86,12 @@ h3 {
     background-color: var(--primario);
     padding: 0 0;
     display: flex;
-    justify-content: center;
+    justify-content: left;
+    align-items: center;
     gap: 2rem;
+}
+.navegacion__logo {
+    width: 8%;
 }
 .navegacion__enlace {
     font-family: var(--fuentePrincipal);
@@ -122,44 +102,16 @@ h3 {
 .navegacion__enlace:hover {
     color: var(--secundario);
 }
-
 /* Grid */
 .grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 2rem;
+    background-color: var(--primario);
+    align-items: center;
+    justify-items: center;
 }
-@media (min-width: 768px) {
-      .grid {
-          grid-template-columns: repeat(3, 1fr);
-      }
+.grid__contenedor {
+    grid-template-columns: 30% 70%;
 }
-
-/* Producto */
-.producto {
-    background-color: var(--gris);
-    padding: 1rem;
-}
-.producto__nombre {
-    font-size: 4rem;    
-}
-.producto__precio {
-    font-size: 2.8rem;
-    color: var(--secundario);
-}
-.producto__color {
-    font-size: 4rem;
-    color: var(--secundarioOscuro);
-}
-.producto__nombre,
-.producto__precio,
-.producto__color {
-    font-family: var(--fuentePrincipal);
-    margin: 1rem 0;
-    text-align: center;
-    line-height: 1.2;
-}
-
 /* Gráficos */
 .grafico {
     min-height: 30rem;
@@ -267,70 +219,9 @@ h3 {
     cursor: pointer;
     background-color: var(--primario);
 }
-
-/* ALERTA */
-.alerta {
-    text-align: center;
-    font-size: 2rem;
-    grid-row: 4/5;
-    grid-column: 1/3;
-    line-height: 0rem;
-    font-weight: bold;
+.div__contenedor {
+    padding: 0rem 1rem;
 }
-.alerta__dos{
-    grid-row: 3/5;
-    grid-column: 1/3;
-}
-
-/* Pago de Tarjeta */
-.pago {
-    margin: 0 auto;
-    font-family: var(--fuentePrincipal);
-    box-sizing: border-box;
-    display: block;
-    width: 100%;
-    padding: 0;
-    font-size: 1.3em;
-    text-align: center;
-  }
-.pago__num {
-    width: 377px;
-    margin-bottom: 1rem;
-}
-.pago__date, .pago__ccv {
-    width: 187px;
-    margin-bottom: 1rem;
-}
-.pago__texto {
-    line-height: 0;
-}
-.pago__nombre, .pago__apellidos,
-.pago__direccion, .pago__codp,
-.pago__pais, .pago__tel{
-    margin-bottom: 1rem;
-}
-.pago__direccion {
-    width: 420px;
-} @media (max-width: 420px) {
-    .pago__direccion {
-        width: 215px;
-    }  
-}
-.pago__codp {
-    width: 120px;
-}
-.pago__pais{
-    width: 100px;
-}
-.pago__tel {
-    width: 195px;
-}
-.pago__submit {
-    border: none;
-    font-size: 3rem;
-    font-family: var(--fuentePrincipal);
-    padding: 2rem;
-    border-radius: 1rem;
-    width: 42rem;
-    line-height: 10px;
+.img__contenedor {
+    width: 40rem;
 }
