@@ -13,20 +13,26 @@
 </head>
 
 <body>
+  <!-- Barra de navegación -->
   <div class="navegacion">
-    <img class="navegacion__logo" src="src/perrito.jpg" alt="SOFTGEM">
     <a class="navegacion__enlace navegacion__enlace--activo" href="index.html">Inicio</a>
     <a class="navegacion__enlace" href="nosotros.html">Acerca de nosotros</a>
     <a class="navegacion__enlace" href="ayuda.html">Ayuda</a>
     <a class="navegacion__enlace" href="productos.html">Productos</a>
   </div>
 
+  <!-- Contenedor principal -->
   <main class="contenedor">
-    <h1>SOFTGEM</h1>
+    <!-- Logo SOFTGEM -->
+    <div style="display: block; text-align: center;">
+      <img class="img__contenedor" src="src/softgem_logo.png" alt="SOFTGEM">
+      <h1 class="h1__contenedor--titulo">SOFTGEM</h1>
+    </div>
 
-    <div class="grid grid__contenedor">
-      <div>
-        <img class="img__contenedor" src="src/megan_logo 3.png" alt="MEGAN">
+    <!-- Sección MEGAN -->
+    <div class="grid grid__contenedor--1">
+      <div style="background-image: url(src/fondo_1.jpg); background-size: cover; margin: 1rem 1rem;">
+        <img class="img__contenedor--1" src="src/megan_logo 3.png" alt="MEGAN">
       </div>
       <div class="div__contenedor">
         <h2>Conoce nuestro asistente virtual MEGAN</h2>
@@ -42,19 +48,27 @@
         <a class="a__contenedor" href="productos.html">Ver más.</a>
       </div>
     </div>
-
     <p> </p>
-    <div class="grid">
-      <div>
+    <!-- Sección Contratación -->
+    <div class="grid grid__contenedor--2">
+      <div class="div__contenedor">
         <h2>¡Unete a nuestro equipo!</h2>
-        <p>Tenemos cientos de oportunidades para crecer, aprender e innovar.</p>
-        <p>Se parte de esta gran familia</p>
+        <p class="p__contenedor">
+          Tenemos cientos de oportunidades para crecer, aprender e innovar.
+        </p>
+        <p class="p__contenedor">
+          Se parte de esta gran familia
+        </p>
+      </div>
+      <div style="margin: 1rem 1rem;">
+        <img class="img__contenedor--2" src="src/megafono_vector.jpg" alt="MEGAN">
       </div>
     </div>
   </main>
 
+  <!-- Footer -->
   <footer class="footer">
-    <p class="footer__texto"> Copyright © 2022 &middot; SOFTGEM. Todos los derechos Reservados.</p>
+    <p class="footer__texto"> Copyright &copy; 2022 &middot; SOFTGEM. Todos los derechos reservados.</p>
   </footer>
 </body>
 
