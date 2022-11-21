@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
-  <link rel="shortcut icon" href="img2/icono.ico">
+  <link rel="shortcut icon" href="src/icono_pagina.ico">
 </head>
 
 <body>
@@ -24,44 +24,45 @@
   <!-- Contenedor principal -->
   <main class="contenedor">
     <!-- Logo SOFTGEM -->
-    <div style="display: block; text-align: center;">
+    <div>
       <img class="img__contenedor" src="src/softgem_logo.png" alt="SOFTGEM">
-      <h1 class="h1__contenedor--titulo">SOFTGEM</h1>
+      <h1 class="h1__titulo">SOFTGEM</h1>
     </div>
 
     <!-- Sección MEGAN -->
-    <div class="grid grid__contenedor--1">
-      <div style="background-image: url(src/fondo_1.jpg); background-size: cover; margin: 1rem 1rem;">
-        <img class="img__contenedor--1" src="src/megan_logo 3.png" alt="MEGAN">
+    <div class="grid grid__seccion--1">
+      <div>
+        <img src="src/megan_logo 3.png" alt="MEGAN">
       </div>
-      <div class="div__contenedor">
-        <h2>Conoce nuestro asistente virtual MEGAN</h2>
-        <p class="p__contenedor">
+      <div>
+        <h2 class="h2--seccion">Conoce nuestro asistente virtual MEGAN</h2>
+        <p class="p--seccion">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam id dolor vitae augue semper gravida quis vel
           nisl.
           Quisque sagittis
           volutpat velit ut placerat. Aliquam suscipit urna in mattis fringilla. Vestibulum vehicula lorem dui, eu
           auctor
           dolor egestas sit
-          amet. Mauris ut turpis mi. Aliquam erat volutpat. Maecenas porta malesuada lacinia.
+          amet. Mauris ut turpis mi. Aliquam erat volutpat. Maecenas porta malesuada lacinia. <br><br>
+          <a class="a--seccion" href="productos.html">Conocer más</a>
         </p>
-        <a class="a__contenedor" href="productos.html">Ver más.</a>
       </div>
     </div>
+
     <p> </p>
+
     <!-- Sección Contratación -->
-    <div class="grid grid__contenedor--2">
-      <div class="div__contenedor">
-        <h2>¡Unete a nuestro equipo!</h2>
-        <p class="p__contenedor">
+    <div class="grid grid__seccion--2">
+      <div>
+        <h2 class="h2--seccion">¡Únete a nuestro equipo!</h2>
+        <p class="p--seccion">
           Tenemos cientos de oportunidades para crecer, aprender e innovar.
-        </p>
-        <p class="p__contenedor">
-          Se parte de esta gran familia
+          <br><br>
+         <a class="a--seccion" href="#">Se parte de esta gran familia.</a>
         </p>
       </div>
-      <div style="margin: 1rem 1rem;">
-        <img class="img__contenedor--2" src="src/megafono_vector.jpg" alt="MEGAN">
+      <div>
+        <img class="img__seccion img__seccion--2" src="src/megafono_vector_2.png" alt="Unete">
       </div>
     </div>
   </main>
@@ -71,5 +72,4 @@
     <p class="footer__texto"> Copyright &copy; 2022 &middot; SOFTGEM. Todos los derechos reservados.</p>
   </footer>
 </body>
-
 </html>
