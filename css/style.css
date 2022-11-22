@@ -149,3 +149,20 @@ h2 {
     color: var(--blanco);
     font-size: 2rem;
 }
+
+/* Responsivo  */
+@media (max-width: 768px) {
+    .grid__seccion--1 {
+        grid-template-columns: none;
+    }
+    .img__seccion--2 {
+        width: 35%;
+    }
+    .navegacion {
+        flex-direction: column;
+    }
+    .img__contenedor {
+        width: 65%
+    }
+}
+
